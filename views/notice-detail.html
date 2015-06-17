@@ -1,0 +1,11 @@
+<ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-positive">
+	 <button class="button button-icon" ng-click="closeDetail()">
+        <i class="icon ion-arrow-down-c"></i>
+      </button>
+      <h1 class="title" style="margin:0 39px;">{{nd.title}}</h1>
+    </ion-header-bar>
+	<ion-content scroll="true" scrollbar-y="false" has-bouncing="true">
+    	<div class="writer-nr" style="margin-top:10px;" ng-bind-html="transferred(nd.content)"></div>
+	</ion-content>
+</ion-modal-view>

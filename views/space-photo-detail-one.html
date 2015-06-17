@@ -1,0 +1,50 @@
+<ion-view title="班级说说">
+		
+		<ul class="img-num-show inline-block-ul">
+			<li class="current">1</li>
+			<li>/</li>
+			<li class="all">10</li>
+		</ul>
+		<ion-slide-box on-slide-changed="slideHasChanged($index)" class="img-detail-show">
+		  <ion-slide>
+		    <div class="box blue">
+		    	<canvas width="100%"></canvas>
+		    </div>
+		  </ion-slide>
+		 <ion-slide>
+		    <div class="box blue">
+		    	<canvas width="100%"></canvas>
+		    </div>
+		  </ion-slide>
+		  <ion-slide>
+		    <div class="box blue">
+		    	<canvas width="100%"></canvas>
+		    </div>
+		  </ion-slide>
+
+		</ion-slide-box>
+		
+		<script type="text/javascript">
+		// $(function(){
+		// 	//动态设置图片距离顶部的位置，保持图片垂直居中
+		// 	var imgBox = $(".box img");
+		// 	for(var i = 0; i<imgBox.length;i++){
+		// 	  var imgHeight = - imgBox.eq(i).height()/2;
+		// 	  imgBox.eq(i).css("margin-top",imgHeight);
+		// 	}
+		// 	function setImgNumber(){
+		// 	  var imgAll = $(".slider-pager span").length;
+		// 	  var activeImg = $(".slider-pager .active").index()+1;
+		// 	  $(".img-num-show .current").html(activeImg);
+		// 	  $(".img-num-show .all").html(imgAll);
+		// 	}
+		// 	setImgNumber();
+		// });
+		</script>
+		
+</ion-view>
+<style type="text/css">
+.tab-nav,.slider-pager {
+	display: none;
+}
+</style>

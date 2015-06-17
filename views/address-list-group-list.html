@@ -1,0 +1,70 @@
+<ion-view view-title="临时小组">
+  <ion-nav-buttons side="right">
+    <a class="button button-balanced ion-navicon icon ion-plus" href="#/tab/address-list-group-chose"></a>
+  </ion-nav-buttons>
+  <ul class="address-list-number">
+        <li><i class="icon-search"></i></li>
+        <li><i class="icon-star"></i></li>
+        <li>A</li>
+        <li>B</li>
+        <li class="active">C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+        <li>H</li>
+        <li>I</li>
+        <li>J</li>
+        <li>K</li>
+        <li>L</li>
+        <li>M</li>
+        <li>N</li>
+        <li>O</li>
+        <li>P</li>
+        <li>Q</li>
+        <li>R</li>
+        <li>S</li>
+        <li>T</li>
+        <li>U</li>
+        <li>V</li>
+        <li>W</li>
+        <li>X</li>
+        <li>Y</li>
+        <li>Z</li>
+      </ul>
+  <ion-content scroll="true" scrollbar-y="false" has-bouncing="true">
+    <ion-list class="list">
+
+      
+    <!-- 搜索 -->
+      <div class="padding">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="输入关键字搜索本地联系人" ng-model="query">
+        </label>
+      </div>
+
+      <!-- 临时小组 -->
+      <a class="item item-avatar" href="#/tab/group-info">
+        <img src="img/group.png">
+        <h2 class="alone-h2">家长委员会小组</h2>
+      </a>
+       <!-- <div class="empty-area icon-2" ></div> -->
+
+      <a class="item item-avatar" href="#/tab/group-info">
+        <img src="img/group.png">
+        <h2 class="alone-h2">兴趣组</h2>
+      </a>
+
+      
+    </ion-list>
+  </ion-content>
+</ion-view>
+<style>
+  .tabs {
+    display: none;
+  }
+  .has-tabs {
+    bottom: 0;
+  }
+</style>

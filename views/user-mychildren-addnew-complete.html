@@ -1,0 +1,38 @@
+<ion-view title="找回密码">
+	<ion-content >
+
+		<!-- 老账号第一次登陆后提示下面 -->
+		<div class="padding">
+			<div class="alert-box yellow">
+				<i class="icon-circle-exclamation-mark"></i> 本账号为家长账号，关联子女账号后才能正常使用，请填写下方表单  
+			</div>
+		</div>
+
+		<div class="list list-inset">
+			<label class="item item-input">
+			  <input type="text" placeholder="子女的身份证号码 / 手机号码">
+			  <div class="from-alert wrong">
+			    <i class="ion-alert-circled"></i>  格式不正确
+			  </div>
+			  <div class="from-alert right">
+			    <i class="ion-checkmark-circled"></i> 
+			  </div>
+			</label>
+			<label class="item item-input">
+			  <input type="text" placeholder="子女的真实姓名">
+			  <div class="from-alert wrong">
+			    <i class="ion-alert-circled"></i>  只能为汉字
+			  </div>
+			  <div class="from-alert right">
+			    <i class="ion-checkmark-circled"></i> 
+			  </div>
+			</label>
+		</div>
+		<div class="padding">
+			<button class="button button-block button-balanced">
+			  关联到我的账号
+			</button>
+		</div>
+
+	</ion-content>
+</ion-view>

@@ -1,0 +1,130 @@
+<ion-view view-title="通讯录">
+  <ion-nav-buttons side="right">
+    <button class="button button-balanced ion-navicon icon ion-person-add"></button>
+  </ion-nav-buttons>
+  <ul class="address-list-number">
+        <li><i class="icon-search"></i></li>
+        <li><i class="icon-star"></i></li>
+        <li>A</li>
+        <li>B</li>
+        <li class="active">C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+        <li>H</li>
+        <li>I</li>
+        <li>J</li>
+        <li>K</li>
+        <li>L</li>
+        <li>M</li>
+        <li>N</li>
+        <li>O</li>
+        <li>P</li>
+        <li>Q</li>
+        <li>R</li>
+        <li>S</li>
+        <li>T</li>
+        <li>U</li>
+        <li>V</li>
+        <li>W</li>
+        <li>X</li>
+        <li>Y</li>
+        <li>Z</li>
+      </ul>
+  <ion-content scroll="true" scrollbar-y="false" has-bouncing="true">
+    <ion-list class="list">
+
+      
+    <!-- 搜索 -->
+      <div class="padding">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="输入关键字搜索本地联系人" ng-model="query">
+        </label>
+      </div>
+
+      <!-- 临时小组 -->
+      <a class="item item-avatar" href="#/tab/address-list-group-list">
+        <img src="img/group.png">
+        <h2 class="alone-h2">临时小组</h2>
+      </a>
+       <!-- <div class="empty-area icon-2" ></div> -->
+
+       <!-- 班级开始 -->
+      <div class="item item-divider gray small">
+        六年级
+      </div>
+      <a class="item item-avatar" href="#/tab/group-more">
+        <img src="img/group.png">
+        <h2 class="alone-h2">二（1）班</h2>
+      </a>
+      <a class="item item-avatar" href="#/tab/group-more">
+        <img src="img/group.png">
+        <h2 class="alone-h2">二（2）班</h2>
+      </a>
+
+      <!-- A组 -->
+      <div class="item item-divider gray small">
+        A
+      </div>
+
+      <!-- 普通的联系人 -->
+      <a class="item item-avatar" href="#/tab/space-info-more">
+        <img src="img/userface1.jpg">
+        <h2>阿猫</h2>
+        <p>11001101</p>
+      </a>
+
+      <!-- 带家长信息的联系人 -->
+      <a class="item item-avatar" href="#">
+        <img src="img/userface1.jpg">
+        <h2>八哥</h2>
+        <p class="gray">11001101</p>
+        <span class="position-right top gray">狗爹</span>
+        <span class="position-right bottom gray">二（1）班</span>
+      </a>
+
+      <!-- 带选择框的联系人 -->
+      <div class="has-left-element">
+        <label>
+          <div class="checkbox">
+            <input type="checkbox">
+          </div>
+          <div class="item item-avatar item-move-right" href="#">
+            <img src="img/userface1.jpg">
+            <h2>阿猫</h2>
+            <p class="gray">11001101</p>
+            <span class="position-right top gray">狗爹</span>
+            <span class="position-right bottom gray">二（1）班</span>
+          </div>
+        </label>
+      </div>
+
+
+
+      <!-- B组 -->
+      <div class="item item-divider gray small">
+        B
+      </div>
+      <a class="item item-avatar" href="#/tab/space-info-more">
+        <img src="img/userface1.jpg">
+        <h2>八哥</h2>
+        <p>11001101</p>
+      </a>
+      <a class="item item-avatar" href="#/tab/space-info-more">
+        <img src="img/userface1.jpg">
+        <h2>宝哥</h2>
+        <p>11001109</p>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>
+<style>
+  .tabs {
+    display: none;
+  }
+  .has-tabs {
+    bottom: 0;
+  }
+</style>

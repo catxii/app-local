@@ -1,0 +1,11 @@
+<ion-view title="{{title}}">
+	<ion-content scroll="true" scrollbar-y="false" has-bouncing="true">
+		<div class="list">
+			<a class="item item-icon-right" ng-click="showNotice(notice)" href="javascript:void(0)" ng-repeat="notice in noticeList">
+			    {{notice.title}}
+			    <p class="gray-color small-font" style="margin:0">发布人：{{notice.userName}}　时间：{{notice.createAt.time | date : 'yyyy-MM-dd hh:mm:ss'}}</p>
+			    <i class="icon ion-chevron-right gray-color"></i>
+			  </a>
+		</div>
+	</ion-content>
+</ion-view>

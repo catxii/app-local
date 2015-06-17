@@ -1,0 +1,20 @@
+<ion-view title="{{id==='1' ? '随堂测验' : '考试成绩'}}">
+	<ion-content scroll="true" scrollbar-y="false" has-bouncing="true">
+	
+		<div class="list">
+		  <div ng-show="id === '1'" class="item item-icon-right" ng-repeat="test in classroomtestData">
+		    {{test.workName}}
+		    <p ng-show="!test.isFinished" class="gray-color small-font" style="margin:0">开始时间:{{test.allowAt}}</p>
+		    <p ng-show="test.isFinished" class="gray-color small-font" style="margin:0">平均分:{{test.avg}} 得分:{{test.score}} 完成时间:{{test.finishAt}}</p>
+		  </div>
+		  
+		  <div ng-show="id === '2'" class="item item-icon-right" ng-repeat="test in testData">
+		  	{{test.examName}}
+		   <p ng-show="!test.isFinished" class="gray-color small-font" style="margin:0">
+		   	<span ng-repeat="s in test.scores">{{s.subjectName}} : {{s.mark}} </span>
+		   </p>
+		  </div>
+		</div>
+		
+	</ion-content>
+</ion-view>

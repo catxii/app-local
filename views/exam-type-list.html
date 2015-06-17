@@ -1,0 +1,139 @@
+<ion-view title="随堂测试" ng-app="">
+	<ion-content scroll="true" scrollbar-y="false" has-bouncing="true">
+		
+		  <div class="exam-box card">
+
+		  	<ul class="inline-block-ul top-ul">
+		  		<li class="title"> <i class="icon-pencil"></i> 数学 </li>
+		  	</ul>
+		  	<ul class="wz-list">
+		  		<li class="orange-color">
+		  			<i class=" icon-play"></i>2014-11-10 三角形面积计算
+					<div class="do-area"><input class="button button-energized button-small" type="button" value="测试"></div>
+		  		</li>
+		  		<li>
+		  			<i class=" icon-play"></i>2014-11-10 三角形面积计算
+					<div class="do-area"><input class="button button-light button-small" type="button" value="查看"></div>
+		  		</li>
+		  		<li >
+		  			<i class=" icon-play"></i>2014-11-10 三角形面积计算
+					<div class="do-area"><input class="button button-light button-small" type="button" value="查看"></div>
+		  		</li>
+		  	</ul>
+		  	<div class="add-more-button"><a href="#/tab/exam-type-list-more-list">点击查看更多 >></a></div>
+
+		  </div>
+
+		  <div class="exam-box card">
+
+		  	<ul class="inline-block-ul top-ul">
+		  		<li class="title"> <i class="icon-pencil"></i> 英语 </li>
+		  	</ul>
+		  	<ul class="wz-list">
+		  		<li class="orange-color">
+		  			<i class=" icon-play"></i>2014-11-10 unit 1 what's your name?
+					<div class="do-area"><input class="button button-energized button-small" type="button" value="测试"></div>
+		  		</li>
+		  		<li>
+		  			<i class=" icon-play"></i>2014-11-10 unit 1 what's your name?
+					<div class="do-area"><input class="button button-light button-small" type="button" value="查看"></div>
+		  		</li>
+		  		<li >
+		  			<i class=" icon-play"></i>2014-11-10 unit 1 what's your name?
+					<div class="do-area"><input class="button button-light button-small" type="button" value="查看"></div>
+		  		</li>
+		  	</ul>
+		  	<div class="add-more-button"><a href="#/tab/exam-type-list-more-list">点击查看更多 >></a></div>
+
+		  </div>
+
+		  <!-- <div class="exam-box card" >
+			  
+			  	<ul class="inline-block-ul top-ul">
+			  		<li class="title"> <i class=" icon-book"></i> 同步测试 </li>
+			  		<li class="pull-right" style="margin:0;"><input class="button button-balanced button-small" type="button" ng-click="dsPanelAll()" value="折叠全部"></li>
+			  	</ul>
+
+			  	<div class="sync" ng-repeat="dt in listData track by $index">
+				  	<div class="exam-single-box {{dt.cls}}" ng-click="dsPanel(dt)">
+					  	<div class="tree-top">
+					  		<div class="open-button">
+					  			<i class="icon-circle-plus"></i> 
+					  			<i class="icon-circle-minus"></i>
+					  		</div>
+					  		<h1 class="exam-title">{{dt.title}}</h1>
+					  		<ul class="inline-block-ul status-bar">
+					  			<li class="loadname">完成度</li>
+					  			<li class="loadbar">
+					  				<span class="full-loading">
+					  					<span class="less-loading" style="width:10%;"></span>
+					  				</span>
+					  			</li>
+					  			<li class="status-ico"><i class="icon-ok-2 green-color"></i></li>
+					  		</ul>
+					  	</div>
+
+					  	<ul class="sub-tree">
+					  		<li ng-repeat="sub in dt.subData track by $index">
+					  			<div class="status-ico-left"><i class="icon-circle-ok green-color"></i></div>
+					  			<div class="question-name">{{sub.title}}</div>
+					  			<div class="do-area"><span class="green-color">{{sub.score}}分</span> <input type="button" value="查看" class="button button-balanced button-small"></div>
+					  		</li>
+					  	</ul>
+					</div>
+				</div>
+
+
+				<div class="sync">
+					<div class="exam-single-box open" >
+					  	<div class="tree-top">
+					  		<div class="open-button">
+					  			<i class="icon-circle-plus"></i> 
+					  			<i class="icon-circle-minus"></i>
+					  		</div>
+					  		<h1 class="exam-title"> 第一单元 hello,i'm jim</h1>
+					  		<ul class="inline-block-ul status-bar">
+					  			<li class="loadname">完成度</li>
+					  			<li class="loadbar">
+					  				<span class="full-loading">
+					  					<span class="less-loading" style="width:0%;"></span>
+					  				</span>
+					  			</li>
+					  			<li class="status-ico" style="display:none;"><i class="icon-ok-2 green-color"></i></li>
+					  		</ul>
+					  	</div>
+
+					  	<ul class="sub-tree">
+					  		<li>
+					  			<div class="status-ico-left"><i class="icon-circle-ok green-color"></i></div>
+					  			<div class="question-name">第一节 hello啊</div>
+					  			<div class="do-area">92分 <input type="button" value="测试" class="button button-balanced button-small" onclick="window.location='#/tab/exam-test'"></div>
+					  		</li>
+					  		<li>
+					  			<div class="status-ico-left"><i class="icon-riflescope"></i></div>
+					  			<div class="question-name">第一节 hello啊</div>
+					  			<div class="do-area">92分 <input type="button" value="测试" class="button button-balanced button-small"></div>
+					  		</li>
+					  		<li>
+					  			<div class="status-ico-left"><i class="icon-riflescope"></i></div>
+					  			<div class="question-name">第一节 hello啊</div>
+					  			<div class="do-area">92分 <input type="button" value="测试" class="button button-balanced button-small"></div>
+					  		</li>
+					  	</ul>
+					</div>
+				</div>
+			  
+
+		  </div> -->
+	
+	</ion-content>
+</ion-view>
+<style>
+	.tab-nav.tabs {display:none;}
+	.has-tabs { bottom:0}
+</style>
+<script type="text/javascript">
+	// $(".exam-single-box").click(function(){
+
+	// });
+</script>

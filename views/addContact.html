@@ -1,0 +1,35 @@
+  <ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-positive">
+	 <button class="button button-icon" ng-click="addContactPanelClose()">
+        <i class="icon ion-arrow-down-c"></i>
+      </button>
+      <h1 class="title">添加联系人</h1>
+    </ion-header-bar>
+    <ion-content  scroll="true" scrollbar-y="false" has-bouncing="true">
+    <ul class="flex-ul-inline" style="margin: 10px;">
+    	<li style="flex:1">
+    		<div class="list list-inset " style="display: block;margin:0 5px 0 0;">
+			  <label class="item item-input">
+			    <i class="icon ion-search placeholder-icon"></i>
+			    <input type="text" placeholder="输入关键字搜索" ng-model="userName">
+			  </label>
+			</div>
+    	</li>
+    	<li>
+    		<div class="list list-inset" style="margin:0;">
+				<button class='button  button-positive' ng-click="findContact(userName)">查找</button>
+			</div>
+    	</li>
+    </ul>
+      	
+		
+		<div class="list">
+		 <a class="item item-avatar" ng-repeat="fc in findContactList" href="javascript:void(0)">
+		    <img ng-src="{{imageUrl}}{{fc.userImg}}" />
+		      <h2>{{fc.userName}}</h2>
+		      <p style="margin:0;">{{fc.schoolName}} {{fc.className}}</p>
+		      <p class="position-top-right" style="top:13px;"><button class='button  button-balanced' ng-show="!fc.flag" ng-click="addContact(fc)">添加</button></p>
+		  </a>
+		 </div>
+    </ion-content>
+  </ion-modal-view>

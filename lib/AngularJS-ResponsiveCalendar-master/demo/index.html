@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html ng-app="calendarDemoApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="description" content="AngularJS Responsive Calendar Demo">
+    <title>AngularJS Responsive Calendar Demo</title>
+    <link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.0.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/rcalendar/calendar.css"/>
+    <script src="http://cdn.staticfile.org/angular.js/1.2.10/angular.min.js"></script>
+    <script src="../src/rcalendar/calendar.js"></script>
+    <script src="calendarDemoCtrl.js"></script>
+
+    <link href="../../ionic/css/ionic.min.css" rel="stylesheet">
+    <link href="../../glyphicons/css/glyphicons.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link href="../../../css/style-lyl.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- <header class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">AngularJS Responsive Calendar</a>
+            </div>
+            <p class="navbar-text hidden-xs">A pure AngularJS responsive calendar directive</p>
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li>
+                    <a href="https://github.com/twinssbc/AngularJS-ResponsiveCalendar">
+                        <img style="display:inline-block"  src="github-icon.png"/>
+                        View on
+                GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header> -->
+    <section class="content padding">
+        <section class="container-fluid">
+            <section title="loadEvents()">
+
+                <!-- <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" >Month</button>
+                        <button type="button" class="btn btn-default" >Week</button>
+                        <button type="button" class="btn btn-default" >Day</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" >Today</button>
+                    </div>
+                </div> -->
+                <div class="well well-sm calendar-bg">
+                    <div  class="ng-isolate-scope ng-pristine ng-valid ng-valid-date">
+                        <div class="row calendar-navbar">
+                            <div class="nav-left col-xs-2">
+                                <button type="button" class="btn btn-default btn-sm" > <i class="glyphicon glyphicon-chevron-left"></i>
+                                </button>
+                            </div>
+                            <div class="calendar-header col-xs-8"> <strong class="">March 2015</strong>
+                            </div>
+                            <div class="nav-right col-xs-2">
+                                <button type="button" class="btn btn-default btn-sm" > <i class="glyphicon glyphicon-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        
+                        <div >
+                            <table class="table table-bordered monthview-datetable monthview-datetable calendar-table">
+                                <thead>
+                                    <tr>
+                                        
+                                        <th class="text-center ng-scope" >
+                                            <small class="ng-binding">Sun</small>
+                                        </th>
+                                        
+                                        <th class="text-center ng-scope" >
+                                            <small class="ng-binding">Mon</small>
+                                        </th>
+                                        
+                                        <th class="text-center ng-scope" >
+                                            <small class="ng-binding">Tue</small>
+                                        </th>
+                                        
+                                        <th class="text-center ng-scope" >
+                                            <small class="ng-binding">Wed</small>
+                                        </th>
+                                        
+                                        <th class="text-center ng-scope" >
+                                            <small class="ng-binding">Thu</small>
+                                        </th>
+                                        
+                                        <th class="text-center ng-scope" >
+                                            <small class="ng-binding">Fri</small>
+                                        </th>
+                                        
+                                        <th class="text-center ng-scope" >
+                                            <small class="ng-binding">Sat</small>
+                                        </th>
+                                         </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    <tr  class="ng-scope">
+
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">01</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">02</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">03</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">04</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">05</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center monthview-primary-with-event" >
+                                            <div  class="ng-binding ball-num">06</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">07</div>
+                                        </td>
+                                         </tr>
+                                    
+                                    <tr  class="ng-scope">
+
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center monthview-primary-with-event" >
+                                            <div  class="ng-binding ball-num">08</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">09</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center " >
+                                            <div  class="ng-binding ">10</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center monthview-primary-with-event monthview-selected" >
+                                            <div  class="ng-binding ball-num">11</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num ">12</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center monthview-selected" >
+                                            <div  class="ng-binding ball-num">13</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">14</div>
+                                        </td>
+                                         </tr>
+                                    
+                                    <tr  class="ng-scope">
+
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">15</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">16</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">17</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center monthview-primary-with-event" >
+                                            <div  class="ng-binding ball-num">18</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">19</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center monthview-primary-with-event" >
+                                            <div  class="ng-binding ball-num">20</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">21</div>
+                                        </td>
+                                         </tr>
+                                    
+                                    <tr  class="ng-scope">
+
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">22</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">23</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">24</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">25</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">26</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">27</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center monthview-primary-with-event" >
+                                            <div  class="ng-binding ball-num">28</div>
+                                        </td>
+                                         </tr>
+                                    
+                                    <tr  class="ng-scope">
+
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">29</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center monthview-primary-with-event" >
+                                            <div  class="ng-binding ball-num">30</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num">31</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num text-muted">01</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center monthview-secondary-with-event" >
+                                            <div  class="ng-binding ball-num text-muted">02</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num text-muted">03</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num text-muted">04</div>
+                                        </td>
+                                         </tr>
+                                    
+                                    <tr  class="ng-scope">
+     
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num text-muted">05</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num text-muted">06</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num text-muted">07</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num text-muted">08</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num text-muted">09</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num text-muted">10</div>
+                                        </td>
+                                        
+                                        <td  class="monthview-dateCell ng-scope text-center" >
+                                            <div  class="ng-binding ball-num text-muted">11</div>
+                                        </td>
+                                         </tr>
+                                     </tbody>
+                            </table>
+                            
+                            <ul class="inline-block-ul color-title-ul">
+                            <li><span ><i class="green-ball"></i> 今日</span></li>
+                                <li><span><i class="red-ball"></i> 有请假/迟到/早退记录</span></li>
+                            </ul>
+                            <div  class="event-detail-container ng-scope">
+                                <div class="scrollable" style="height: 200px">
+                                    <table class="table table-bordered table-striped table-fixed">
+                                        <tbody>
+                                            
+                                            
+                                            <tr class="ng-scope">
+                                                
+                                                
+                                                <td class="monthview-eventdetail-timecolumn ng-scope" >All day</td>
+                                                
+                                                <td  class="event-detail ng-binding">All Day - 13</td>
+                                            </tr>
+                                            <tr class="ng-scope">
+                                                
+                                                
+                                                <td class="monthview-eventdetail-timecolumn ng-scope" >All day</td>
+                                                
+                                                <td  class="event-detail ng-binding">All Day - 13</td>
+                                            </tr>
+                                            <tr class="ng-scope">
+                                                
+                                                
+                                                <td class="monthview-eventdetail-timecolumn ng-scope" >All day</td>
+                                                
+                                                <td  class="event-detail ng-binding">All Day - 13</td>
+                                            </tr>
+                                            <tr class="ng-scope">
+                                                
+                                                
+                                                <td class="monthview-eventdetail-timecolumn ng-scope" >All day</td>
+                                                
+                                                <td  class="event-detail ng-binding">All Day - 13</td>
+                                            </tr>
+                                            </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                             </div>
+                         </div>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

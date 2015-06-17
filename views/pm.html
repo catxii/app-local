@@ -1,0 +1,18 @@
+<ion-view view-title="消息" cache-view="false">
+<!--<ion-nav-buttons side="right" ng-switch on="rollcall.step">
+    <button class="button button-icon " ng-click="testReload()">
+      刷新
+    </button>
+  </ion-nav-buttons>-->
+  <ion-content class="padding" scroll="true" scrollbar-y="false" has-bouncing="true">
+  <div class="list">
+<!--ng-click="openModal()"-->
+    <a href="javascript:void(0)" class="item item-avatar" ng-click="toDetail(pm)" ng-repeat="pm in pmList | orderBy:time">
+      <img ng-src="{{pmimgurl}}{{pm.id}}">
+      <h2>{{pm.senderName}}</h2>
+      <p>{{pm.content}}</p>
+      <span ng-if="pm.unread" class="badge badge-assertive">{{pm.unread}}</span>
+    </a>
+  </div>
+  </ion-content>
+  </ion-view>

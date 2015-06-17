@@ -1,0 +1,29 @@
+<ion-view hide-nav-bar="true">
+	<ion-header-bar align-title="center" class="bar-stable">
+	  <div class="buttons">
+	    <button class="button button-light" ng-click="doSomething()">取消</button>
+	  </div>
+	  <h1 class="title">发评价</h1>
+	  <div class="buttons">
+	    <button class="button button-light">发表</button>
+	  </div>
+	</ion-header-bar>
+	<ion-content scroll="true" scrollbar-y="false" has-bouncing="true" style="background:white; bottom:0;">
+		<textarea class="weibo-nr-send"  >写评价....</textarea>
+		<ul class="inline-block-ul" style="margin:10px;">
+			<li><label class="button button-balanced"><i class="icon-picture"></i> 上传照片<input type="file" style="display:none;"></label></li>
+		</ul>
+		<ul class="img-view-list inline-block-ul">
+			<li><a href="javascript:void(0)" class="del"><i class="icon-bin"></i></a><img src="img/userface2.jpg"></li>
+			<li><a href="javascript:void(0)" class="del"><i class="icon-bin"></i></a><img src="img/userface2.jpg"></li>
+			<li><a href="javascript:void(0)" class="del"><i class="icon-bin"></i></a><img src="img/userface2.jpg"></li>
+			<li><a href="javascript:void(0)" class="del"><i class="icon-bin"></i></a><img src="img/userface2.jpg"></li>
+		</ul>
+	</ion-content>
+</ion-view>
+<!--下面的样式删掉，临时用的-->
+<style>
+	.tabs {
+		display: none;
+	}
+</style>

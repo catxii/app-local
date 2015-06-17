@@ -1,0 +1,126 @@
+<ion-view title="家庭作业">
+	<ion-content scroll="true" scrollbar-y="false" has-bouncing="true">
+		<div class="padding">
+			<ul class="inline-block-ul step-ul three">
+				<li class="one arrow-right complete" style="right:63%;"><i class="number-ball">1</i> 基本信息</li>
+				<li class="two arrow-right" style="left:32%;"><i class="number-ball">2</i> 输入内容</li>
+				<li class="three arrow-left"><i class="number-ball">3</i> 发布完成</li>
+			</ul>
+		</div>
+		<div id="step-1" >
+			<div class="list padding">
+			  <label class="item item-input item-select">
+			    <div class="input-label">
+			      发布班级
+			    </div>
+			    <select>
+			      <option>Blue</option>
+			      <option selected>测试班级</option>
+			      <option>测试班级2</option>
+			    </select>
+			  </label>
+			  <label class="item item-input item-select">
+			    <div class="input-label">
+			      指定小组（选填）
+			    </div>
+			    <select>
+			      <option>Blue</option>
+			      <option selected>测试班级</option>
+			      <option>测试班级2</option>
+			    </select>
+			  </label>
+			  <label class="item item-input item-select">
+			    <div class="input-label">
+			      家长确认
+			    </div>
+			    <select>
+			      <option selected>需要确认</option>
+			      <option>不需要确认</option>
+			    </select>
+			  </label>
+			</div>
+			<div class="padding">
+				<button id="step1_button" class="button button-block button-light">
+				  下一步
+				</button>
+			</div>
+		</div>
+
+		<div id="step-2" style="display:none;">
+
+			<div class="list padding">
+			  <label class="item item-input item-select">
+			    <div class="input-label">
+			      创建作业从
+			    </div>
+			    <select>
+			      <option>新的作业内容</option>
+			      <option selected>三角形的面积计算</option>
+			      <option>几何图形的计算题巩固</option>
+			    </select>
+			  </label>
+			  <label class="item item-input">
+			    <input type="text" placeholder="作业标题" >
+			  </label>
+			  <label class="item item-input">
+			    <textarea placeholder="请输入内容" rows="10"></textarea>
+			  </label>
+			</div>
+			
+			<div class="padding">
+				<button id="step2_button" class="button button-block button-light">
+				  下一步
+				</button>
+			</div>
+		</div>
+
+		<div id="step-3" style="display:none;">
+
+		<ul class="complete-status padding">
+			<li>恭喜，已经成功发布</li>
+			<li><a href="#" >继续发布</a></li>
+			<li class="right-status-ico"><i class="ion-checkmark-circled"></i></li>
+		</ul>
+
+			<div class="list padding">
+
+			  <div class="item item-divider">
+			    作业历史（最近五条）
+			  </div>
+			  <a class="item" href="#">
+			    几何图形的面积计算
+			    <span class="item-note">
+			      2014-10-10
+			    </span>
+			  </a>
+			  <a class="item" href="#">
+			    几何图形的面积计算
+			    <span class="item-note">
+			      2014-10-10
+			    </span>
+			  </a>
+			  <a class="item" href="#">
+			    几何图形的面积计算
+			    <span class="item-note">
+			      2014-10-10
+			    </span>
+			  </a>
+			  <a class="item" href="#">
+			    几何图形的面积计算
+			    <span class="item-note">
+			      2014-10-10
+			    </span>
+			  </a>
+			  <a class="item" href="#">
+			    几何图形的面积计算
+			    <span class="item-note">
+			      2014-10-10
+			    </span>
+			  </a>
+
+			</div>
+			
+		</div>
+
+	</ion-content>
+</ion-view>

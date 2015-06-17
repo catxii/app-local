@@ -1,0 +1,75 @@
+/* Empty. Add your own CSS if you like */
+.toast-container {
+  position: fixed;
+  bottom: 50px;
+  z-index: 9999;
+  width: 100%;
+}
+
+.toast-message {
+  width: 270px;
+  padding: 5px 5px 5px 5px;
+  margin: 5px auto 5px auto;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  background-color: #d8d8d8;
+  border-radius: 7px;
+}
+.loadimg .loading{
+	filter:alpha(opacity=80); 
+	-moz-opacity:0.8; 
+	opacity:0.8;
+	border-radius: 200px;
+	overflow: hidden;
+	padding:10px;
+}
+.loadimg .loading-container .loading{
+	background-color:#FFFFFF;
+	
+}
+.loadimg .loading-container .loading img {
+	width:100px;
+}
+.loadimg .backdrop-loading{
+	background-color:#000;
+	filter:alpha(opacity=80); 
+	-moz-opacity:0.8; 
+	opacity:0.3;
+}
+.showback{
+	display:block!important
+}
+.inlineshow{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#map {
+	width: 100%;
+	position: fixed;
+	right:1px;
+	top: 44px;
+	bottom: 0px;
+	line-height: 200px;
+	text-align: center;
+	background: #FFFFFF;
+}
+.ipos {
+	background: no-repeat center center url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAsCAYAAAAn4+taAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNC8wMS8xNExYUU4AAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAACTklEQVRoge2YO2gUURSGv7PjEkULO4UoFooIFgtzprAPWMiWKewSTadgYWEhBjHCloGUQtYHaGEjGAQtUmgnZO9YpsqC2NgYIwjRInMscoPrYkzhGTIs8zdnzoP578ewM/eumBmjoMZ+L8BLNUjVVINUTTVI1VSDVE0jA3KgjJuGEE6LyI2iKC6JyBkzWxORF8ADVV0rw1O891ohhCngPnDyL+1PZjabZdkTV1OcQUIIV4CHMf0JvAK+A0eANjAWe1dV9ZGbMY6/kTzPzwHzMV0VkZaqTgLTqjopIi1gNfbnQwhnvbzBEcTMbgFHgXURaRdFsRFCWAa+hhCWi6LYEJE2sB7nbnp5g+9b62KMIU3Tvoh0gQm2Fz0hIt00TftAADCztqO3K8h4jJsAZnZ+sDmQ/wAQkXEc5QnyJcZjACLybLApIk/j5YmheRd5gryLMev1elOqesfMrpvZczO7pqqzvV5vGmgNzbvIDUREXsbLRES6IYTbzWZzMcuyy0mSPA4h3BWRxR3PgXkff6/vSJ7nx83sPXBqoLwJFEACHByofxSRC2mafnYxx/GJxEW9GSofAg7zJwTAa08I8N80doG9HrHx++vvJlcQVV0xs6V/zZjZkqquePpCOdv4OWBrl96WiNwrwdMfJMuyHFjYpb2gqh+8PaG8g9Uc0B+q9WO9FJUCoqrfgBm2X73EOBPrpai0o66qvgU6Me3EvDSVctTdUZIknaIoxhqNRmfv6f+T+1F3vzQy/6LUIFVTDVI11SBVUw1SNdUgVdPIgPwCtt+2JPQRVicAAAAASUVORK5CYII=);
+	background-size: 50px 44px;
+}
+	
+.tabshide .tabs {
+    display: none;
+}
+.tabshide .has-tabs{
+	bottom: 0px!important; 
+}
+/*.keyboard-open .tabs{
+  display:none;
+  }
+.keyboard-open .has-tabs{
+ bottom:0;
+ }*/

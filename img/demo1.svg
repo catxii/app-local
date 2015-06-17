@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="Rounded_Rectangle_4">
+	<g>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#91383C" d="M78.039,34.735H19.522c-5.621,0-10.177,4.557-10.177,10.177
+			v25.441c0,5.621,4.556,10.178,10.177,10.178h58.517c5.621,0,10.178-4.557,10.178-10.178V44.912
+			C88.217,39.292,83.66,34.735,78.039,34.735z"/>
+	</g>
+</g>
+<g id="Paper">
+	<g>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#EAE0CD" d="M60.158,10.565H19.522c-2.108,0-3.816,1.708-3.816,3.816v52.157
+			c0,2.108,1.708,3.815,3.816,3.815h58.517c2.107,0,3.818-1.707,3.818-3.815V32.263L60.158,10.565z"/>
+	</g>
+</g>
+<g id="Text">
+	<g>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#C8C0B0" d="M23.338,66.538h50.886v-3.816H23.338V66.538z M52.598,25.83
+			H23.338v3.816h29.259V25.83z M23.338,74.17h50.886v-3.816H23.338V74.17z M23.338,58.905h50.886v-3.816H23.338V58.905z
+			 M23.338,39.824v3.816h50.886v-3.816H23.338z M23.338,51.272h50.886v-3.816H23.338V51.272z"/>
+	</g>
+</g>
+<g id="Envelope_1">
+	<g>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#CA4C52" d="M86.006,39.843L11.872,87.915
+			c1.104,0.936,2.507,1.521,4.061,1.521h65.943c3.502,0,6.342-2.863,6.342-6.396V44.661C88.217,42.729,87.348,41.016,86.006,39.843z
+			"/>
+	</g>
+</g>
+<g id="Envelope_2">
+	<g>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#DD5354" d="M11.563,40.122c-1.347,1.165-2.218,2.869-2.218,4.79v38.162
+			c0,3.516,2.847,6.361,6.36,6.361h66.152c1.557,0,2.963-0.581,4.07-1.512L11.563,40.122z"/>
+	</g>
+</g>
+<g id="Shadow" opacity="0.0706">
+	<g>
+		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#040000" points="61.502,11.909 61.502,32.175 81.857,38.584 
+			81.857,32.263 		"/>
+	</g>
+</g>
+<g id="Curve">
+	<g>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFBF2" d="M60.23,10.637v16.466c0,0,0,0,0,0v1.271
+			c0,2.108,1.707,3.817,3.816,3.817h17.736L60.23,10.637z"/>
+	</g>
+</g>
+</svg>

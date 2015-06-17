@@ -1,0 +1,58 @@
+<ion-view title="家长注册" ng-app="">
+
+    <ion-content scroll="true" scrollbar-y="false" has-bouncing="true">
+
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="text" placeholder="用户名">
+          <div class="from-alert wrong">
+            <i class="ion-alert-circled"></i>  长度不足6~12位
+          </div>
+          <div class="from-alert right">
+            <i class="ion-checkmark-circled"></i> 
+          </div>
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="密码">
+          <div class="from-alert wrong">
+            <i class="ion-alert-circled"></i>  长度不足6~12位
+          </div>
+          <div class="from-alert right">
+            <i class="ion-checkmark-circled"></i> 
+          </div>
+        </label>
+      </div>
+
+      <span class="orange-color " style="display:block;margin:10px 10px 5px;"><i class="ion-information-circled"></i> 下面的信息用于核实绑定学生账号，请填写真实数据。</span>
+
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="text" placeholder="身份证号码">
+          <div class="from-alert wrong">
+            <i class="ion-alert-circled"></i>  格式不正确
+          </div>
+          <div class="from-alert right">
+            <i class="ion-checkmark-circled"></i> 
+          </div>
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="真实姓名">
+          <div class="from-alert wrong">
+            <i class="ion-alert-circled"></i>  只能为汉字
+          </div>
+          <div class="from-alert right">
+            <i class="ion-checkmark-circled"></i> 
+          </div>
+        </label>
+      </div>
+      <div class="padding">
+        <button class="button button-block button-balanced">
+          立即注册
+        </button>
+      </div>
+    </ion-content>
+</ion-view>
+<style>
+  .tab-nav.tabs {display:none;}
+  .has-tabs { bottom:0}
+</style>
